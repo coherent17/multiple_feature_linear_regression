@@ -4,7 +4,6 @@ import matplotlib.pyplot as plt
 from mpl_toolkits.mplot3d import Axes3D
 
 data=genfromtxt("multi_var.csv",delimiter=',')
-print(data)
 x_data=data[:,0:2]
 y_data=data[:,2]
 
@@ -53,7 +52,6 @@ theta_0=0
 theta_1=0
 theta_2=0
 iteration=1000
-
 
 print("Initial State:")
 print("theta_0=%.3lf,   theta_1=%.3lf,  theta_2=%.3lf" %(theta_0,theta_1,theta_2))
