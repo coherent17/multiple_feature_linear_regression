@@ -44,6 +44,11 @@ def gradient_descent(x_data,y_data,theta_0,theta_1,theta_2,learning_rate,iterati
             x0,x1=np.meshgrid(x0,x1)
             z=theta_0+x0*theta_1+x1*theta_2
             ax.plot_surface(x0,x1,z)
+
+            ax.set_title("the %d times of iteration" %(i))
+            ax.set_xlabel("feature 1")
+            ax.set_ylabel("feature 2")
+            ax.set_zlabel("target")
             plt.show()
     return theta_0,theta_1,theta_2,cost_function
 
