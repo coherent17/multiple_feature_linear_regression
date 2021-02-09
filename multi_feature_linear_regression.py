@@ -4,6 +4,7 @@ import matplotlib.pyplot as plt
 from mpl_toolkits.mplot3d import Axes3D
 
 data=genfromtxt("multi_var.csv",delimiter=',')
+print(data)
 x_data=data[:,0:2]
 y_data=data[:,2]
 
